@@ -1,0 +1,19 @@
+jbdtool.exe -t ip:172.16.10.99 -m 172.16.9.12:GABO-WORKSTATION:LIFEPO4:mqtt-jbd:mqtt-jbd -i 5 -F
+
+#-d 9
+#Debugging, not sure how many levels it has, but 9 is delivering plenty of information.
+
+
+#-t ip:172.16.10.99
+#This is the IP address of your RS485 to Ethernet Converter, make sure it's setup for TCP Server on port 23
+
+#-m 172.16.9.12
+#This is the MQTT Broker
+#-m 172.16.9.12:CLIENTID
+#This is the Client ID
+#-m 172.16.9.12:CLIENTID:LIFEPO4
+#This is the Topic to publish to.
+
+#-i 5
+#This is the interval, do the connection every 5 seconds
+#-F flatten arrays
